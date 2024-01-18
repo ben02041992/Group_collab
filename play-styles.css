@@ -1,0 +1,120 @@
+
+
+.background-image-play {
+    position: relative;
+    background: url('images/japan cartoon background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+/* ****************************** Cat ****************************** */
+.gameSpace{
+    position: relative;
+    box-sizing: border-box;
+    width: 15%;
+    height: 35%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 540px;
+
+  
+}
+    
+#catSheet{
+    background: url(./charImages/downloadCat.png) no-repeat ;
+    position: absolute;
+    /* transform: translate(-50% -50%); */
+    width: 5000px;
+    height: 3500px;
+    background-position: -90px -1680px;
+
+}
+  
+#catChar {
+
+    border: 5px solid red;
+    position: absolute;
+    width: 330px;
+    height: 380px;
+    overflow:hidden;
+}
+
+
+/* ***************************************************************** */
+/* ****************************** Troll ****************************** */
+
+#trollSheet{
+    background: url(./charImages/downloadTroll.png) no-repeat ;
+    position: relative;
+    /* transform: translate(-50% -50%); */
+    width: 6281px;
+    height: 2388px;
+    background-position: -120px -3160px;
+
+}
+  
+#trollChar {
+    /* border: 10px solid yellow; */
+    position: absolute;
+    width: 400px;
+    height: 410px;
+    overflow: hidden;
+}
+
+/* ***************************************************************** */
+/* ****************************** sasq ****************************** */
+
+#sasqSheet{
+    background: url(./charImages/downloadSasq.png) no-repeat ;
+    position: relative;
+    /* transform: translate(-50% -50%); */
+    width: 5000px;
+    height: 3500px;
+    background-position: -220px -1930px;
+
+}
+  
+#sasqChar{
+
+    /* border: 5px solid yellow; */
+    position:absolute;
+    width: 400px;
+    height: 450px;
+    overflow:hidden;
+}
+
+/* ***************************************************************** */
+/* ****************************** dino ****************************** */
+
+#dinoSheet{
+    background: url(./charImages/downloadDino.png) no-repeat ;
+    position: relative;
+    /* transform: translate(-50% -50%); */
+    width: 6281px;
+    height: 2388px;
+    background-position: -105px -1870px;
+
+}
+  
+#dinoChar{
+
+    /* border: 5px solid yellow; */
+    position: absolute;
+    width: 450px;
+    height: 380px;
+    overflow:hidden;
+}
+
+#tamagotchiSection{
+    display:inline;
+    position: absolute ;
+    border: 2px solid black;
+    width: 500px;
+    height: 300px;
+}

@@ -1,0 +1,80 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.background-image {
+    position: relative;
+    background: url('images/japan cartoon background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title h1 {
+    color: #0d0c0c; 
+    margin: 0;
+}
+
+.section {
+    background-color: #333; 
+    color: #060606; 
+    padding: 40px;
+    text-align: center;
+    z-index: 3;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.bottom-images {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.bottom-image {
+    width: 250px; 
+    height: auto;
+}
+
