@@ -33,6 +33,7 @@
     width: 5000px;
     height: 3500px;
     background-position: -90px -1680px;
+    /* background-position: -1100px -2090px; */
 
 }
   
@@ -40,7 +41,7 @@
 
     border: 5px solid red;
     position: absolute;
-    width: 330px;
+    width: 280px;
     height: 380px;
     overflow:hidden;
 }
@@ -56,13 +57,14 @@
     width: 6281px;
     height: 2388px;
     background-position: -120px -3160px;
+    /* background-position: -1500px -2470px; */
 
 }
   
 #trollChar {
     /* border: 10px solid yellow; */
     position: absolute;
-    width: 400px;
+    width: 380px;
     height: 410px;
     overflow: hidden;
 }
@@ -77,6 +79,7 @@
     width: 5000px;
     height: 3500px;
     background-position: -220px -1930px;
+     /* background-position: -220px -790px; */
 
 }
   
@@ -99,7 +102,7 @@
     width: 6281px;
     height: 2388px;
     background-position: -105px -1870px;
-
+    /* background-position: -100px -560px; */
 }
   
 #dinoChar{
