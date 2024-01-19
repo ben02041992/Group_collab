@@ -1,6 +1,6 @@
 // Cat
-const catSheet = document.getElementById("catSheet");
 const catChar = document.getElementById("catChar")
+const catSheet = document.getElementById("catSheet");
 // Troll
 const trollSheet = document.getElementById("trollSheet");
 const trollChar = document.getElementById("trollChar")
@@ -13,8 +13,6 @@ const dinoChar = document.getElementById("dinoChar")
 
 
 // test
-const clickTitle = document.querySelector(".title")
-
 
 const speed = 100
 
@@ -108,7 +106,7 @@ const trollStartAnimation = (choice) => {
       let trollDiff = 500;
 
       animationInterval = setInterval(() => {
-        trollSheet.style.backgroundPosition= `-${trollPositionX}px -2470px`
+        trollSheet.style.backgroundPosition = `-${trollPositionX}px -2470px`
         trollChar.style.width = `${trollWidth}px`
         trollChar.style.height = `${trollHeight}px`
     

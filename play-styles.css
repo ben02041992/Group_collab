@@ -1,5 +1,4 @@
 
-
 .background-image-play {
     position: relative;
     background: url('images/japan cartoon background.jpg') no-repeat center center fixed;
@@ -36,7 +35,7 @@
   
 #catChar {
 
-    border: 5px solid red;
+    /* border: 5px solid red; */
     position: absolute;
     width: 280px;
     height: 380px;
