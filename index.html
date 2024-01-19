@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="play-styles.css">
     <title>Saibāpetto サイバーペット</title>
 </head>
 <body>
-    <div class="background-image">
-    
-        <div class="title">
-            <h1>Saibāpetto サイバーペット</h1>
+    <div class="gameContainer">
+        <div><h1 class="title">Saibāpetto サイバーペット</h1></div>
+        <div id="startBtn">
+            <p id="start">Start Game</p>
+        </div>
+        <div class="name"></div>
+        <!-- <div id="confetti"> -->
+        <div class="character">
+            <div id="character1"></div>
+            <div id="character2"></div>
+            <div id="character3"></div>
+            <div id="character4"></div>
+        </div>
+        <div class="stats">
+            <div id="hp" class="bar"></div>
+            <div id="stamina" class="bar"></div>
+            <div id="happiness" class="bar"></div>
+        </div>
+        <div class="actions">
+            <button id="feed">Feed Me</button>
+            <button id="play">Play With Me</button>
+            <button id="hug">Cuddle Me</button>
         </div>
     </div>
 
@@ -22,15 +41,6 @@
         </ul>
     </nav>
 
-    
-    <div class="bottom-images">
-        <img src="images/Catnobackground.png" alt="Image 1" class="bottom-image">
-        <img src="images/Dinonobackgorund.png" alt="Image 2" class="bottom-image">
-        <img src="images/Goblinnobackground.png" alt="Image 3" class="bottom-image">
-        <img src="images/Snownobackground.png" alt="Image 4" class="bottom-image">
-    </div>
-
     <script src="script.js"></script>
 </body>
 </html>
-

@@ -2,10 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-}
-
-.background-image {
-    position: relative;
+    text-align: center;
     background: url('images/japan cartoon background.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
@@ -16,9 +13,6 @@ body, html {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.title h1 {
     color: #0d0c0c; 
     margin: 0;
 }
@@ -26,15 +20,87 @@ body, html {
 .section {
     background-color: #333; 
     color: #060606; 
-    padding: 40px;
     text-align: center;
     z-index: 3;
 }
 
-.section h2 {
+h2 {
     font-size: 24px;
-    margin-bottom: 20px;
 }
+
+.gameContainer {
+    position: flex
+}
+
+p {
+    top: 3em;
+}
+
+#startBtn {
+    position:relative;
+    width: 50px;
+    height: 50px;
+    background: none;
+    left: 50%;
+    box-shadow: 10px;
+
+}
+
+#start {
+    position: absolute;
+    background: none;
+    cursor: pointer;
+    font-size: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    border: solid;
+    background: none;
+    transform: translateX(-50%);
+    -webkit-box-shadow: 5px 5px 15px 5px #45DDFF; 
+    box-shadow: 5px 5px 15px 5px #45DDFF;
+}
+
+.actions{
+    display: none;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stats{
+    display: flex;
+}
+
+.name {
+    display: none
+}
+
+.bar {
+    display: none;
+    padding: 20px;
+}
+
+.start:hover {
+    border-radius: 15px;
+    text-transform: uppercase;
+    box-shadow: inset;
+    cursor: pointer;
+}
+
+
+
+@keyframes startGame {
+    0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+}
+
 
 nav {
     position: fixed;
@@ -63,6 +129,7 @@ nav a {
     font-weight: bold;
 }
 
+
 .bottom-images {
     display: flex;
     justify-content: space-between;
@@ -77,4 +144,5 @@ nav a {
     width: 250px; 
     height: auto;
 }
+
 
