@@ -1,11 +1,3 @@
-
-function startGame() {
-    document.getElementById("playGameButton").style.display = "none";
-    document.querySelector("#gameContent .stats").style.display = "flex";
-    document.querySelector("#gameContent .actions").style.display = "flex";
-}
-
-
 function animateBannerText(texts) {
     const bannerText = document.getElementById('bannerText');
     let currentIndex = 0;
@@ -19,111 +11,53 @@ let selectedCharacter = "";
 let playerName = "";
 
 function startGame() {
+    // Get the selected character
     selectedCharacter = document.querySelector(".character:hover");
     if (!selectedCharacter) {
         alert("Please choose a character!");
         return;
     }
 
+    // Get the player's name
     playerName = document.getElementById("characterName").value.trim();
     if (!playerName) {
         alert("Please name your character!");
         return;
     }
 
+    // Display confetti with the player's chosen name
     displayConfetti(`You've adopted ${playerName}!`);
 
+    // Hide character selection section and show Tamagotchi-style game section
     document.querySelector(".game-section").style.display = "none";
     document.getElementById("tamagotchiSection").style.display = "block";
 }
 
-function displayConfetti(message) {
-    const confetti = document.getElementById("confetti");
-    confetti.innerText = message;
-    confetti.style.display = "block";
-    setTimeout(() => {
-        confetti.style.display = "none";
-    }, 3000);
-}
+// const displayConfetti = (message) => {
+//     const confetti = document.getElementById("confetti");
+//     confetti.innerText = message;
+//     confetti.style.display = "block";
+//     setTimeout(() => {
+//         confetti.style.display = "none";
+//     }, 3000);
+// }
 
 function feedMe() {
-
+    // Implement logic for feeding the Saibāpetto
+    // Update the stats bars accordingly
 }
 
 function playWithMe() {
-   
+    // Implement logic for playing with the Saibāpetto
+    // Update the stats bars accordingly
 }
 
 function cuddleMe() {
-  
+    // Implement logic for cuddling with the Saibāpetto
+    // Update the stats bars accordingly
 }
 
 function sendMeToWar() {
-
-}
-
-
-let health = 100;
-let happiness = 100;
-let strength = 100;
-let stamina = 100;
-
-const gameOverThreshold = 0;
-
-function updateStats(action) {
-    switch (action) {
-        case 'feedMe':
-            stamina += 10;
-            happiness += 5;
-            health -= 2;
-            break;
-        case 'playWithMe':
-            stamina -= 5;
-            happiness += 10;
-            break;
-        
-        default:
-            break;
-    }
-
-    updateStatBars();
-
-    if (health <= gameOverThreshold || happiness <= gameOverThreshold || strength <= gameOverThreshold || stamina <= gameOverThreshold) {
-        showGameOverScreen();
-    }
-}
-
-function updateStatBars() {
-    const healthBar = document.getElementById("healthBar");
-    const happinessBar = document.getElementById("happinessBar");
-    const strengthBar = document.getElementById("strengthBar");
-    const staminaBar = document.getElementById("staminaBar");
-
-    healthBar.style.height = health + "px";
-    happinessBar.style.height = happiness + "px";
-    strengthBar.style.height = strength + "px";
-    staminaBar.style.height = stamina + "px";
-
-}
-
-function showGameOverScreen() {
-    document.getElementById("gameContent").style.display = "none";
-    document.getElementById("gameOverScreen").style.display = "block";
-}
-
-function restartGame() {
-    health = 100;
-    happiness = 100;
-    strength = 100;
-    stamina = 100;
-
-    updateStatBars();
-
-    document.getElementById("gameOverScreen").style.display = "none";
-    document.getElementById("gameContent").style.display = "flex";
-}
-
-function selectCharacter(character) {
-    alert(`You selected ${character}`);
-    document.getElementById
+    // Implement logic for sending the Saibāpetto to war
+    // Update the stats bars accordingly
 }
