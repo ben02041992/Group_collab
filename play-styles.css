@@ -1,0 +1,131 @@
+
+#gameContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat-bar {
+    width: 50px;
+    height: 200px;
+    background-color: #3498db; 
+    margin: 0 10px;
+    position: relative;
+}
+
+.stat-bar:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+#healthBar { background-color: #e74c3c; } 
+#happinessBar { background-color: #f39c12; } 
+#strengthBar { background-color: #27ae60; } 
+#staminaBar { background-color: #8e44ad; } 
+
+
+.sprites {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+.sprites img {
+    width: 50px; 
+    height: 50px;
+    cursor: pointer;
+}
+#gameContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.sprites {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+.sprites img {
+    width: 50px; 
+    height: 50px; 
+    cursor: pointer;
+    
+}
+
+#nameCharacter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#characterName {
+    margin-bottom: 10px;
+}
+
+
+#playGameButton {
+    margin-top: 20px;
+    background-color: #f40606; 
+    color: #090808; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stats, .actions {
+    display: none;
+}
+
+.sprites {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+.sprites img {
+    width: 50px; 
+    height: 50px; 
+    cursor: pointer;
+}
+
+#nameCharacter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#characterName {
+    margin-bottom: 10px;
+}
+
+
