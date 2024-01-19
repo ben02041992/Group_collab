@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="play-styles.css">
+    <title>Play Game - Saibāpetto サイバーペット</title>
+</head>
+<body>
+    <div class="background-image">
+        <!-- Centered title at the top -->
+        <div class="title">
+            <h1>Play Game - Saibāpetto サイバーペット</h1>
+        </div>
+
+        <!-- "Play Game" button -->
+        <div id="gameContent">
+            <button id="playGameButton" onclick="startGame()">Play Game</button>
+        </div>
+    </div>
+
+    <!-- Your game content goes here, including stat bars, buttons, etc. -->
+    <div id="characterSelection" style="display: none;">
+        <h2>Select Your Saibāpetto</h2>
+        <!-- Add images for character selection, and handle their selection -->
+        <!-- Example: <img src="character1.png" onclick="selectCharacter(1)"> -->
+        <!-- Example: <img src="character2.png" onclick="selectCharacter(2)"> -->
+    </div>
+
+    <div id="nameCharacter" style="display: none;">
+        <h2>Name Your Saibāpetto</h2>
+        <input type="text" id="characterName" placeholder="Enter a name">
+        <button onclick="confirmCharacter()">Confirm</button>
+    </div>
+
+    <div id="gameActions" style="display: none;">
+        <h2>Your Saibāpetto</h2>
+        <div class="stats">
+        
+        </div>
+        <div class="actions">
+            <button onclick="updateStats('feedMe')">Feed Me</button>
+            <button onclick="updateStats('playWithMe')">Play With Me</button>
+        
+        </div>
+    </div>
+
+    <!-- Game Over screen -->
+    <div id="gameOverScreen" style="display: none;">
+        <h2>Game Over!</h2>
+        <p>Your Saibāpetto's stats reached zero.</p>
+        <button onclick="restartGame()">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
